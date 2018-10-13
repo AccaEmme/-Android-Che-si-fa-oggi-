@@ -1,0 +1,204 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+    Invece di Preference potrei usare PreferenceCategory, ma così è più carino graficamente
+    -->
+
+    <Preference
+        android:key="setting_static_field_generale"
+        android:selectable="false"
+        android:title="@string/settingstranslating_setting_static_field_generale"
+        android:icon="@android:drawable/arrow_down_float"
+        android:summary=""/>
+
+    <CheckBoxPreference
+        android:key="update_just_with_wifi"
+        android:title="@string/settingstranslating_update_just_with_wifi_title"
+        android:defaultValue="false"
+        android:summary="@string/settingstranslating_update_just_with_wifi_summary" />
+
+    <CheckBoxPreference
+        android:key="show_expired_events"
+        android:title="@string/settingstranslating_show_expired_events_title"
+        android:defaultValue="false"
+        android:summary="@string/settingstranslating_show_expired_events_summary" />
+
+    <CheckBoxPreference
+        android:key="update_onstartup"
+        android:title="@string/settingstranslating_update_onstartup_title"
+        android:defaultValue="true"
+        android:summary="@string/settingstranslating_update_onstartup_summary" />
+
+    <CheckBoxPreference
+        android:key="show_ads"
+        android:title="@string/settingstranslating_show_ads_title"
+        android:defaultValue="true"
+        android:summary="@string/settingstranslating_show_ads_summary" />
+
+
+    <!--
+        <CheckBoxPreference
+            android:key=""
+            android:title="vuoto"
+            android:defaultValue="false"
+            android:summary="Questa è la prova di una prova che prova che questa prova non è altro che una prova che serve a provare che quante prove tu possa fare in realtà non proveranno mai che questa prova ha effetti probatori" />
+    -->
+
+    <Preference
+        android:key="setting_static_field_ricerca"
+        android:selectable="false"
+        android:icon="@android:drawable/arrow_down_float"
+        android:title="@string/settingstranslating_setting_static_field_ricerca_title"
+        android:summary=""/>
+
+    <MultiSelectListPreference
+        android:key="province_interesse"
+        android:title="@string/settingstranslating_province_interesse_title"
+        android:summary="@string/settingstranslating_province_interesse_summary"
+        android:dialogTitle="@string/settingstranslating_province_interesse_dialogTitle"
+        android:entries="@array/province"
+        android:entryValues="@array/province"
+        android:defaultValue="@array/empty_array"
+        />
+    <!-- togliendo lo 0 va in errore, probabilmente va svuotato perché prima era un MultiSelectListPreference -->
+    <ListPreference
+        android:key="periodo_interesse"
+        android:title="@string/settingstranslating_periodo_interesse_title"
+        android:summary="@string/settingstranslating_periodo_interesse_summary"
+        android:entries="@array/periodo_eventi"
+        android:entryValues="@array/periodo_eventi_values"
+        android:defaultValue="@array/empty_array"
+        />
+
+    <ListPreference
+        android:key="mypreference_downloadprice"
+        android:title="@string/settingstranslating_downloadpricetitle"
+        android:summary="@string/settingstranslating_downloadpricesummary"
+        android:entries="@array/eventprices"
+        android:entryValues="@array/eventprices_values"
+        android:defaultValue="@array/eventprices_default"
+        />
+
+    <!--
+    <MultiSelectListPreference
+        android:key="si_categorie"
+        android:title="@string/settingstranslating_si_categorie_title"
+        android:summary="@string/settingstranslating_si_categorie_summary"
+        android:dialogTitle="@string/settingstranslating_si_categorie_dialogTitle"
+        android:entries="@array/categorie"
+        android:entryValues="@array/categorie"
+        android:defaultValue="@array/categorie"
+        />
+    -->
+
+    <MultiSelectListPreference
+        android:key="no_categorie"
+        android:title="@string/settingstranslating_no_categorie_title"
+        android:summary="@string/settingstranslating_no_categorie_summary"
+        android:dialogTitle="@string/settingstranslating_no_categorie_dialogTitle"
+        android:entries="@array/categorie"
+        android:entryValues="@array/categorie"
+        android:defaultValue="@array/empty_array"
+        />
+
+    <MultiSelectListPreference
+        android:key="eta_interesse"
+        android:title="@string/settingstranslating_eta_interesse_title"
+        android:summary="@string/settingstranslating_eta_interesse_summary"
+        android:dialogTitle="@string/settingstranslating_eta_interesse_dialogTitle"
+        android:entries="@array/eta_array"
+        android:entryValues="@array/eta_array"
+        android:defaultValue="@array/eta_array"
+        />
+
+<!-- non ha senso, basta specificare nell'età interesse
+    <MultiSelectListPreference
+        android:key="eta_no_interesse"
+        android:title="@string/settingstranslating_eta_no_interesse_title"
+        android:summary="@string/settingstranslating_eta_no_interesse_summary"
+        android:dialogTitle="@string/settingstranslating_eta_no_interesse_dialogTitle"
+        android:entries="@array/eta_array"
+        android:entryValues="@array/eta_array"
+        android:defaultValue="@array/empty_array"
+        />
+-->
+
+    <MultiSelectListPreference
+        android:key="search_attributi"
+        android:title="@string/settingstranslating_search_attributi_title"
+        android:summary="@string/settingstranslating_search_attributi_summary"
+        android:dialogTitle="@string/settingstranslating_search_attributi_dialogTitle"
+        android:entries="@array/attributi"
+        android:entryValues="@array/attributi"
+        android:defaultValue="@array/attributi_default"
+        />
+
+    <EditTextPreference
+        android:key="search_m_raggio"
+        android:title="@string/settingstranslating_search_m_raggio_title"
+        android:summary="@string/settingstranslating_search_m_raggio_summary"
+        android:defaultValue="0"
+        android:inputType="numberDecimal"
+        />
+
+    <Preference
+        android:key="setting_static_field_multimedia"
+        android:selectable="false"
+        android:icon="@android:drawable/arrow_down_float"
+        android:title="@string/settingstranslating_setting_static_field_multimedia_title"
+        android:summary=""/>
+
+    <CheckBoxPreference
+        android:key="download_pictures"
+        android:title="@string/settingstranslating_download_pictures_title"
+        android:defaultValue="false"
+        android:summary="@string/settingstranslating_download_pictures_summary" />
+
+    <CheckBoxPreference
+        android:key="setting_pictures_on_sdcard"
+        android:title="@string/settingstranslating_setting_pictures_on_sdcard_title"
+        android:defaultValue="false"
+        android:summary="@string/settingstranslating_setting_pictures_on_sdcard_summary" />
+
+    <Preference
+        android:key="@string/wipe_pictures"
+        android:title="@string/settingstranslating_wipe_pictures_title"
+        android:defaultValue="true"
+        android:summary="@string/settingstranslating_wipe_pictures_summary" />
+
+    <Preference
+        android:key="setting_static_field_database"
+        android:selectable="false"
+        android:icon="@android:drawable/arrow_down_float"
+        android:title="@string/settingstranslating_setting_static_field_database_title"
+        android:summary=""/>
+
+    <CheckBoxPreference
+        android:key="use_db"
+        android:title="@string/settingstranslating_use_db_title"
+        android:defaultValue="true"
+        android:summary="@string/settingstranslating_use_db_summary" />
+
+    <CheckBoxPreference
+        android:key="wipe_expired_onstartup"
+        android:title="@string/settingstranslating_wipe_expired_onstartup_title"
+        android:defaultValue="false"
+        android:summary="@string/settingstranslating_wipe_expired_onstartup_summary" />
+
+    <Preference
+        android:key="@string/wipe_expired"
+        android:title="@string/settingstranslating_wipe_expired_title"
+        android:defaultValue="true"
+        android:summary="@string/settingstranslating_wipe_expired_summary" />
+
+    <Preference
+        android:key="@string/wipe_db"
+        android:title="@string/settingstranslating_wipe_db_title"
+        android:defaultValue="true"
+        android:summary="@string/settingstranslating_wipe_db_summary" />
+
+    <PreferenceCategory
+        android:title="*** non ancora funzionante">
+    </PreferenceCategory>
+</PreferenceScreen>

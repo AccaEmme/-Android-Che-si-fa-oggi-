@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Elenco eventi" />
+        <item
+            android:id="@+id/nav_lista"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="***Calendario eventi: pubblici e privati" />
+        <item
+            android:id="@+id/nav_preferiti"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="***Preferiti" />
+        <item
+            android:id="@+id/nav_galleria"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="***Galleria eventi" />
+        <item
+            android:id="@+id/nav_advancedsearch"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="***Ricerca avanzata" />
+        <item
+            android:id="@+id/nav_insertEvent"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Inserisci Evento" />
+        <item
+            android:id="@+id/nav_aigioia"
+
+            android:title="Gioia|AI" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+    </group>
+
+    <item android:title="Social">
+        <menu>
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/ic_menu_share"
+                android:title="***Login" />
+    
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="***Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="***Send" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">Che si fa oggi?</string>
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="settings_haiselezionato">Hai selezionato...</string>
+    <string name="url">http://www.chesifaoggi.it</string>
+    <string name="settings_settingtext" translatable="false">Setting</string>
+    <string name="setting_provinceInteresse">Province di interesse:</string>
+    <string name="setting_inputSearch">Search province...</string>
+    <string name="setting_findSelected">Save the selected provinces</string>
+    <string name="setting_gg_perdurata_eventi">Delete expired events each</string>
+    <string name="setting_gg_perdurata_eventi_value">3 days</string>
+    <string name="setting_SICategoria">Show only categories:</string>
+    <string name="setting_NOCategoria">Don\'t show if category:</string>
+    <string name="setting_updateEventsOnlyViaWiFi">Update events only with WiFi\n  (No data connection)</string>
+    <string name="setting_downloadFlyer">Download event flyers</string>
+    <string name="setting_startupDBUpdate">Update locale db\nWhen the application starts</string>
+    <string name="setting_neverDownloadEvents">Use online\n(never download events)</string>
+    <string name="setting_wipeDB">Wipe Database</string>
+    <string name="eventiactivity_addToPrefered">Added to prefered</string>
+    <string name="eventiactivity_removeToPrefered">Removed from prefered</string>
+    <string name="eventiactivity_from">from</string>
+    <string name="eventiactivity_to">to</string>
+    <string name="setting_findInAttributes">Search among the attributes:\nThis is the immediate search\nIn the home, for another see\nAdvanced Search</string>
+    <string name="wipe_db" translatable="false">wipe_db</string>
+    <string name="wipe_expired" translatable="false">wipe_expired</string>
+    <string name="wipe_pictures" translatable="false">wipe_pictures</string>
+    <string name="hello_world">\n\n\nWelcome to beta version.\n\nSome features may be incomplete.\n\nGo to list events or settings, enjoy! :-)</string>
+    <string name="eventiactivity_eventlist">Events list</string>
+    <string name="eventiactivity_update">Update</string>
+    <string name="eventiactivity_searchevent">Search event...</string>
+    <string name="eventiactivity_noprov_title">No province selected</string>
+    <string name="eventiactivity_noprov_desc">Warning: no region or province selected, you will not download any events! Do you want to configure the zones of interest now?</string>
+    <string name="eventiactivity_noprov_scelta">OK WANT TO CONFIGURE THE REGIONS / PROVINCE OF INTEREST NOW</string>
+    <string name="eventiactivity_provinteresse">Regions / provinces of interest:</string>
+    <string name="eventiactivity_nongratuito">NOT Free</string>
+    <string name="eventiactivity_gratuito">Free</string>
+    <string name="eventiactivity_noprenotazione">NO reservations</string>
+    <string name="eventiactivity_siprenotazione">On Reservation</string>
+    <string name="eventiactivity_listview_deletedesc">Are you sure you want to delete this event? (you can restore by download event)</string>
+    <string name="eventiactivity_noWIFI">Wi-Fi connection is missing, I can not update the events</string>
+    <string name="eventiactivity_aggiornoDB">Aggiorno database</string>
+    <string name="eventiactivity_readDB">Events not updated, I read from database</string>
+    <string name="eventiactivity_delexpired_title">Wiping expired events</string>
+    <string name="eventiactivity_delexpired_descr">Warning: If you delete past events, you will also lose your favorite events if you are present, continue?</string>
+    <string name="eventiactivity_updatevent_warningupdDB">Database Update. Expired events will not be deleted while updating, check the settings.</string>
+    <string name="eventiactivity_updatevent_consultazioneonline">Online consultation. Do not update databases</string>
+    <string name="eventiactivity_updatevent_nointernet">No Internet available</string>
+    <string name="eventoactivity_ieri">yesteday </string>
+    <string name="eventoactivity_oggi">oggi </string>
+    <string name="eventoactivity_domani">tomorrow </string>
+    <string name="settingstranslating_search_m_raggio_title">Search Radius (requires GPS position) ***</string>
+    <string name="settingstranslating_search_m_raggio_summary">Meters of air search. If the value is zero it is disabled. Activating this option will prevent your search for provinces</string>
+    <string name="settingstranslating_search_attributi_title">Search among attributes ***</string>
+    <string name="settingstranslating_search_attributi_summary">In Instant Search, choose which attributes to search for. Attention, more attributes may slow down your search</string>
+    <string name="settingstranslating_search_attributi_dialogTitle">Select one or more attributes</string>
+    <string name="settingstranslating_eta_no_interesse_title">Exclude Age Range ***</string>
+    <string name="settingstranslating_eta_no_interesse_summary">The application will exclude a certain age range from the event search</string>
+    <string name="settingstranslating_eta_no_interesse_dialogTitle">Please select one or more age to exclude</string>
+    <string name="settingstranslating_eta_interesse_title">Age search</string>
+    <string name="settingstranslating_eta_interesse_summary">The application will look for events for a specific age range</string>
+    <string name="settingstranslating_eta_interesse_dialogTitle">Please select one or more age to search</string>
+    <string name="settingstranslating_no_categorie_title">Exclude categories</string>
+    <string name="settingstranslating_no_categorie_summary">The application will look for events if NOT in these categories</string>
+    <string name="settingstranslating_no_categorie_dialogTitle">Please select one or more categories to exclude</string>
+    <string name="settingstranslating_si_categorie_title">Show only categories ***</string>
+    <string name="settingstranslating_si_categorie_summary">The application will only look for events in these categories</string>
+    <string name="settingstranslating_si_categorie_dialogTitle">Please select one or more categories of interest</string>
+    <string name="settingstranslating_province_interesse_title">Regions and / or provinces of interest</string>
+    <string name="settingstranslating_province_interesse_summary">The application will only look for events in these areas</string>
+    <string name="settingstranslating_province_interesse_dialogTitle">Please select one or more provinces of interest</string>
+    <string name="settingstranslating_periodo_interesse_title">Period of Interest</string>
+    <string name="settingstranslating_periodo_interesse_summary">Download events up to a given period</string>
+    <string name="settingstranslating_setting_static_field_ricerca_title">Search</string>
+    <string name="settingstranslating_wipe_db_title">Empties the entire database</string>
+    <string name="settingstranslating_wipe_db_summary">Delete all events from the database and its saved items (Ex. Poster)</string>
+    <string name="settingstranslating_use_db_title">Use internal database</string>
+    <string name="settingstranslating_use_db_summary">Save the data. If the option is not selected, the consultation is online and the events will not be saved in the local database</string>
+    <string name="settingstranslating_wipe_expired_onstartup_title">Wipe expired events on startup</string>
+    <string name="settingstranslating_wipe_expired_onstartup_summary">All\'apertura dell\'applicazione verranno eliminati gli eventi scaduti dal database. Può richiedere tempo.\nN.B.*** A prescindere la visualizzazione mostrerà sempre gli eventi NON scaduti.</string>
+    <string name="settingstranslating_wipe_expired_title">Wipe expired events</string>
+    <string name="settingstranslating_wipe_expired_summary">Wipe expired events from internal database</string>
+    <string name="settingstranslating_setting_static_field_database_title" translatable="false">Database</string>
+    <string name="settingstranslating_wipe_pictures_title">Delete posters</string>
+    <string name="settingstranslating_wipe_pictures_summary">Delete the downloaded events posters</string>
+    <string name="settingstranslating_setting_pictures_on_sdcard_title">Download on sdcard ***</string>
+    <string name="settingstranslating_setting_pictures_on_sdcard_summary">If present, content will be downloaded to SD memory in /sdcard/it.chesifaoggi.app/Downloads/ otherwise in internal memory.</string>
+    <string name="settingstranslating_download_pictures_title">Automatically download posters</string>
+    <string name="settingstranslating_download_pictures_summary">Otherwise they will be manually downloadable from the single event</string>
+    <string name="settingstranslating_show_ads_title">Advertisement and communication</string>
+    <string name="settingstranslating_show_ads_summary">Display advertising and communications (no internet required)</string>
+    <string name="settingstranslating_update_onstartup_title">Update events on startup</string>
+    <string name="settingstranslating_update_onstartup_summary">Update events on application startup</string>
+    <string name="settingstranslating_show_expired_events_title">Show expired events</string>
+    <string name="settingstranslating_show_expired_events_summary">Enabling shows the downloaded downloaded events. Disabling them hides them.</string>
+    <string name="settingstranslating_update_just_with_wifi_title">Update only with Wi-Fi</string>
+    <string name="settingstranslating_update_just_with_wifi_summary">Do not update events if data connection is in use</string>
+    <string name="settingstranslating_setting_static_field_generale">General</string>
+    <string name="eventiactivity_adstext">Communications and Advertising:\nFor advertising in this space: chesifaoggi@live.it\nProvinces of interest:</string>
+    <string name="chesifaoggi_exitmessage">Are you sure you want to close this activity?</string>
+    <string name="chesifaoggi_exittitle">Closing Activity</string>
+    <string name="si">Yes</string>
+    <string name="no">no</string>
+    <string name="suggerito">suggested</string>
+    <string name="obbligatorio">obligatory</string>
+    <string name="from_time">at</string>
+    <string name="anni">years</string>
+    <string name="requestpermission_sd">The app was not allowed to write to your storage. Hence, it cannot function properly. Please consider granting it this permission</string>
+    <string name="settingstranslating_setting_static_field_multimedia_title">Multimedia Content</string>
+    <string name="settingsactivity_wipe_pictures_deleted">Posters deleted</string>
+    <string name="settingsactivity_wipe_pictures_title">Deleting pictures</string>
+    <string name="settingsactivity_wipe_pictures_message">Warning: will you delete ALL the downloaded posters, continue?</string>
+    <string name="settingstranslating_downloadpricetitle">Free events or paid events?</string>
+    <string name="settingstranslating_downloadpricesummary">Choose whether to download only free events or just paid events</string>
+    <string name="eventiactivity_etainteresse">Age of interest:</string>
+    <string name="eventiactivity_noeta_title">No age specified</string>
+    <string name="eventiactivity_noeta_desc">No age was specified so search will return 0 result. Set up age in settings</string>
+    <string name="eventiactivity_noeta_scelta">No age chosen</string>
+    <string name="eventiactivity_categorieescluse">Categories excluded:</string>
+</resources>

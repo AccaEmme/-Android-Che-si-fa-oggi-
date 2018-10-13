@@ -1,0 +1,334 @@
+DBApp: implementare delstory
+DBApp: versioning del database, quando cambia il database bisogna cancellare tutto e creare con la nuova struttura. Come gestire le preferenze? Salvare temporaneamente in una tabella?
+___________________________
+                    Albero delle dipendenze
+            Chesifaoggi
+                    EventiActivity
+                        - Eventi
+                        - Evento
+                        - JSONParser
+                        - DBLayer
+                        - PicDownloader
+                    EventoActivity
+                        - PicDownloader
+                    SettingsActivity
+___________________________
+
+da fare:
+  - sistema di notifiche per gli eventi modificati: se qualcuno ha scaricato un evento tempo fa, non ha ripulito il db e nel frattempo l'evento ha modificato qualcosa, non ci sono news!
+  - web: campo valùta EUR, USD, GBP, ...
+  - reset settings
+  - messaggi/comunicazioni/feed dal webservice
+  - path url con stadio da webservice
+  - al primo avvio chiede di settare l'età perché ancora non si è generato il file del settings
+
+
+
+_______UPDATE 1.5 - 06/09/2017
+06/09/2017:
+ - Corretto crash download automatico eventi
+ - Adesso è possibile scaricare la singola locandina dall'elenco
+ - implementato scarico eventi con esclusione categorie di non interesse
+ https://stackoverflow.com/questions/43406398/android-app-crashes-on-real-device-if-apk-is-manually-installed
+
+05/09/2017:
+ - implementato scarico eventi per età
+
+01/09/2017:
+ - Risolto problema apertura immagine sbagliata con click sulla lista
+
+  Riga 750:         holder.img.setTag(state.getId()); // mi serve sapere l'id dell'immagine per aprirla durante lo scorrimento
+  commentando //holder.img.setTag(position);
+
+
+
+15/08/2017:
+ - Completata traduzione default, inglese, francese
+ - Pulizia codice
+ - Corretto errore privilegi scrittura in memoria
+ - Resa più visibile la zona d'interesse dai settings
+ - Possibilità di ricercare per periodo d'interesse eventi
+
+
+01/11/2016
+ - aggiungo categoria "salute"
+
+_______UPDATE 1.4 - 25/10/2016
+
+24/10/2016:
+ - in EventiActivity, public View getView(int position, View convertView, ViewGroup parent) {
+   ho eliminato la variabile locale Evento state = stateList.get(position);
+   usando la variabile d'istanza current_event = stateList.get(position);
+ - immagine evento in alto
+ - abilitata possibilità di aprire la locandina sia nell'evento singolo sia nella lista
+
+18/10/2016:
+ - corretta impaginazione data inizio
+ - singolo evento: colorato lo scrolling di verde e reso SEMPRE visibile anche quando non premuto. Mi son reso conto che non tutti capivano il secondo scrolling
+ - GIOIA|AI: cliccando su "sono solo" cerca tra i consigli a disposizione solo quelli attinenti
+
+
+14/10/2016:
+ - mostro il giorno della settimana
+ DateFormat targetFormat = new SimpleDateFormat("E dd MMM yyyy HH:mm", Locale.getDefault());
+ invece di
+ DateFormat targetFormat = new SimpleDateFormat("dd MMM yyyy HH:mm", Locale.getDefault());
+
+ -invece di android:textAppearance="@android:style/TextAppearance.Small"
+  metto
+            android:textSize="@dimen/smallestText"
+
+ -
+
+_______UPDATE 1.3 - 09/10/2016
+09/10/2016:
+ - creo stringhe traduzione: chesifaoggi_exittitle, chesifaoggi_exitmessage
+ - Modifico stringhe traduzione: eventiactivity_noprov_scelta, eventiactivity_noprov_title, eventiactivity_provinteresse, eventiactivity_siprenotazione, eventiactivity_noprenotazione
+ - Importante modifica JSONurl per visualizzare gli eventi
+ - Possibilità di inserire gli eventi d'interesse nel proprio calendario personale
+ - Possibilità di condividere l'evento
+ - inserita webview per inserire nuovi eventi
+
+
+
+
+_____UPDATE 1.2 - 01/10/2016
+01/10/2016:
+ new_json2.php:      $evento['results'][$i]['caratteristiche'][] = array_map('utf8_encode', $row);
+
+ - create strings.xml per lo shared preference
+settingstranslating_setting_static_field_generale
+
+settingstranslating_show_expired_events_title
+settingstranslating_show_expired_events_summary
+
+settingstranslating_update_just_with_wifi_title
+settingstranslating_update_just_with_wifi_summary
+
+settingstranslating_update_onstartup_title
+settingstranslating_update_onstartup_summary
+
+settingstranslating_show_ads_title
+settingstranslating_show_ads_summary
+
+settingstranslating_setting_static_field_multimedia_title
+
+settingstranslating_download_pictures_title
+settingstranslating_download_pictures_summary
+
+settingstranslating_setting_pictures_on_sdcard_title
+settingstranslating_setting_pictures_on_sdcard_summary
+
+settingstranslating_wipe_pictures_title
+settingstranslating_wipe_pictures_summary
+
+settingstranslating_setting_static_field_database_title
+
+settingstranslating_use_db_title
+settingstranslating_use_db_summary
+
+settingstranslating_wipe_expired_onstartup_title
+settingstranslating_wipe_expired_onstartup_summary
+
+settingstranslating_wipe_expired_title
+settingstranslating_wipe_expired_summary
+
+settingstranslating_wipe_db_title
+settingstranslating_wipe_db_summary
+
+settingstranslating_setting_static_field_ricerca_title
+
+settingstranslating_periodo_interesse_title
+settingstranslating_periodo_interesse_summary
+
+settingstranslating_province_interesse_title
+settingstranslating_province_interesse_summary
+settingstranslating_province_interesse_dialogTitle
+
+settingstranslating_si_categorie_title
+settingstranslating_si_categorie_summary
+settingstranslating_si_categorie_dialogTitle
+
+settingstranslating_no_categorie_title
+settingstranslating_no_categorie_summary
+settingstranslating_no_categorie_dialogTitle
+
+settingstranslating_eta_interesse_title
+settingstranslating_eta_interesse_summary
+settingstranslating_eta_interesse_dialogTitle
+
+settingstranslating_eta_no_interesse_title
+settingstranslating_eta_no_interesse_summary
+settingstranslating_eta_no_interesse_dialogTitle
+
+settingstranslating_search_attributi_title
+settingstranslating_search_attributi_summary
+settingstranslating_search_attributi_dialogTitle
+settingstranslating_search_m_raggio_title
+settingstranslating_search_m_raggio_summary
+
+
+28/09/2016:
+ - aggiunta possibilità di nascondere gli eventi scaduti
+ - nuova grafica evento singolo
+
+24/09/2016:
+EventoActivity:
+- titolo -> Html.fromHtml(titolo)
+- contatti -> Html.fromHtml(contatti)
+- holder.titolo.setText("(" + state.getId() + ") " + state.getTitolo()); -> holder.titolo.setText("(" + state.getId() + ") " + Html.fromHtml(state.getTitolo()));
+- Gestita ricerca per regioni oltre alle singole province.
+Cercando per regione usciranno tutti gli eventi di quella regione e relative province.
+Cercando gli eventi nazionali NON usciranno gli eventi di tutt'Italia, ma solo quelli che sono stati definiti genericamente "nazionali".
+- il logo magicamente è cliccabile e porta all'elenco eventi
+
+18/09/2016:
+ - corretto Settings a destra
+ - gli eventi modificati adesso verranno aggiornati anche se già scaricati nel database
+ invece di INSERT OR IGNORE -> INSERT OR REPLACE
+
+17/09/2016:
+ - Specificato direttamente se l'evento è di ieri,oggi o domani. Altrimenti mostra la data
+ - inserito logo app
+ - getEventiFromDB: mostra gli eventi ordinati
+
+11/09/2016:
+- la data viene mostrata nel formato di prevenienza dell'utente
+public static String parseDate(String d){...}
+-
+
+
+______app pubblicata: 1.1 - 06/09/2016
+06/09/2016
+disabilito in build.grandle(Module: app) il MissingTranslation con:
+android {
+    buildTypes {
+        release {
+            lintOptions {
+                disable 'MissingTranslation'
+            }
+        }
+    }
+}
+vedi: http://stackoverflow.com/questions/27472282/how-to-sign-apk-on-android-studio-even-with-non-translated-strings
+
+04-05-06/09/2016
+Tante cose....
+<HorizontalScrollView> in activity_evento.xml
+
+
+25/06/2016:
+- ho aggiunto nel mypreference.xml il pulsante show_ads
+
+
+22/06/2016:
+ - EventiActivity:
+   onItemListViewLongClick: stateList.remove(e);, deleteItemInDB,
+
+08/05/2016
+elenco_eventi.xml:
+ - CheckBox style="?android:attr/starStyle"
+ - uso rowSpan e colSpan
+ - aggiungo X ImageButton per eliminare evento dalla lista(aggiungerlo nella delstory)
+EventiActivity:
+   - non mostro più l'id: //holder.preferito.setText(state.getId()); ma lo inserisco nel titolo: holder.titolo.setText("("+state.getId()+") "+state.getTitolo());
+
+06/05/2016
+android:key="si_categorie": android:defaultValue="@array/categorie" invece di android:defaultValue="@array/empty_array"
+
+04/05/2016
+Completato AsyncTask per download singole locandine
+
+27/04/2016
+ho sistemato le categorie!
+android:installLocation="auto"
+
+27/03/2016
+in side_nav_bar.xml uso riferimenti a colors.xml
+        android:centerColor="@color/side_nav_bar_centerColor"
+        android:endColor="@color/side_nav_bar_endColor"
+        android:startColor="@color/side_nav_bar_startColor"
+
+24/03/2016
+ho messo minSDKversion 7 invece di 15. ho rimesso 14 perché GridLayout richiede api 14
+
+13/03/2016 alle 01:29 creo costruttore Categoria in SettingsActivity.java, e faccio pulizia con l'utilizzo di checkboxedListView
+
+12/03/2016
+
+11/03/2016
+layout_settings.xml
+    @+id/setting_findInAttributes
+
+SettingsActivity.java:
+- aggiungo categorie
+- rendo le listview cliccabili (http://itarevenge.altervista.org/nooraghe/?topic=android-come-scrollare-una-listview-dentro-una-scrollview)
+        listViewProvince.setOnTouchListener(new ListView.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                int action = event.getAction();
+                switch (action) {
+                    case MotionEvent.ACTION_DOWN:
+                        // Disallow ScrollView to intercept touch events.
+                        v.getParent().requestDisallowInterceptTouchEvent(true);
+                        break;
+
+                    case MotionEvent.ACTION_UP:
+                        // Allow ScrollView to intercept touch events.
+                        v.getParent().requestDisallowInterceptTouchEvent(false);
+                        break;
+                }
+
+                // Handle ListView touch events.
+                v.onTouchEvent(event);
+                return true;
+            }
+        });
+
+
+                                            10/03/2016
+modifiche varie
++
+activity_evento.xml
+                android:id="@+id/evento_descrizione" ho applicato android:autoLink="all"
+EventoActivity.java
+                ho applicato tv_contatti2.setAutoLinkMask(0x0000000f); ma non funziona
+
+                                            08/03/2016
+aggiungo classe parcelable per passare l'oggetto evento tra due intent
+
+Scelta implementativa:
+                 decido di non passare un oggetto tra due intent, strutturato mediante la Parcelable, bensì di passare direttamente i dati che servono
+                 Questo perché comunque un'eventuale modifica degli attributi dell'oggetto, richiederebbe la singola modifica del writeToParcel() a questo punto li invio direttamente.
+                 http://www.simplesoft.it/android/android-e-l-interfaccia-parcelable.html
+
+
+
+
+                                            07/03/2016
+
+                                            27/02/2016
+
+nav_header_chesifaoggi.xml:
+ da android:text="Che si fa oggi?" in android:text="@string/app_name"
+ da android:text="http://www.chesifaoggi.it" in android:text="@string/url"
+
+content_chesifaoggi.xml:
+ sostituisco
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/helloworld" />
+
+    <ListView
+        android:id="@+id/lista_eventi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+con
+<fragment
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/fragment_place"
+   />

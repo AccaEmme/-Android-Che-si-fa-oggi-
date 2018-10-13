@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="province" translate="no">
+        <item>Generici</item>
+        <item>Abruzzo</item>
+        <item>Basilicata</item>
+        <item>Calabria</item>
+        <item>Campania</item>
+        <item>Emilia Romagna</item>
+        <item>Friuli Venezia Giulia</item>
+        <item>Lazio</item>
+        <item>Liguria</item>
+        <item>Lombardia</item>
+        <item>Marche</item>
+        <item>Molise</item>
+        <item>Piemonte</item>
+        <item>Puglia</item>
+        <item>Sardegna</item>
+        <item>Sicilia</item>
+        <item>Toscana</item>
+        <item>Trentino Alto Adige</item>
+        <item>Umbria</item>
+        <item>Veneto</item>
+        <item>AG</item>
+        <item>AL</item>
+        <item>AN</item>
+        <item>AO</item>
+        <item>AP</item>
+        <item>AQ</item>
+        <item>AR</item>
+        <item>AT</item>
+        <item>AV</item>
+        <item>BA</item>
+        <item>BG</item>
+        <item>BI</item>
+        <item>BL</item>
+        <item>BN</item>
+        <item>BO</item>
+        <item>BR</item>
+        <item>BS</item>
+        <item>BT</item>
+        <item>BZ</item>
+        <item>CA</item>
+        <item>CB</item>
+        <item>CE</item>
+        <item>CH</item>
+        <item>CI</item>
+        <item>CL</item>
+        <item>CN</item>
+        <item>CO</item>
+        <item>CR</item>
+        <item>CS</item>
+        <item>CT</item>
+        <item>CZ</item>
+        <item>EN</item>
+        <item>FC</item>
+        <item>FE</item>
+        <item>FG</item>
+        <item>FI</item>
+        <item>FM</item>
+        <item>FR</item>
+        <item>GE</item>
+        <item>GO</item>
+        <item>GR</item>
+        <item>IM</item>
+        <item>IS</item>
+        <item>KR</item>
+        <item>LC</item>
+        <item>LE</item>
+        <item>LI</item>
+        <item>LO</item>
+        <item>LT</item>
+        <item>LU</item>
+        <item>MB</item>
+        <item>MC</item>
+        <item>ME</item>
+        <item>MI</item>
+        <item>MN</item>
+        <item>MO</item>
+        <item>MS</item>
+        <item>MT</item>
+        <item>NA</item>
+        <item>NO</item>
+        <item>NU</item>
+        <item>OG</item>
+        <item>OR</item>
+        <item>OT</item>
+        <item>PA</item>
+        <item>PC</item>
+        <item>PD</item>
+        <item>PE</item>
+        <item>PG</item>
+        <item>PI</item>
+        <item>PN</item>
+        <item>PO</item>
+        <item>PR</item>
+        <item>PT</item>
+        <item>PU</item>
+        <item>PV</item>
+        <item>PZ</item>
+        <item>RA</item>
+        <item>RC</item>
+        <item>RE</item>
+        <item>RG</item>
+        <item>RI</item>
+        <item>RM</item>
+        <item>RN</item>
+        <item>RO</item>
+        <item>SA</item>
+        <item>SI</item>
+        <item>SO</item>
+        <item>SP</item>
+        <item>SR</item>
+        <item>SS</item>
+        <item>SV</item>
+        <item>TA</item>
+        <item>TE</item>
+        <item>TN</item>
+        <item>TO</item>
+        <item>TP</item>
+        <item>TR</item>
+        <item>TS</item>
+        <item>TV</item>
+        <item>UD</item>
+        <item>VA</item>
+        <item>VB</item>
+        <item>VC</item>
+        <item>VE</item>
+        <item>VI</item>
+        <item>VR</item>
+        <item>VS</item>
+        <item>VT</item>
+    </string-array>
+
+    <string-array name="empty_array"/>
+
+
+    <string-array name="categorie" translate="no">
+        <item descr="aggregativo">Aggregativo</item>
+        <item>Al chiuso</item>
+        <item>All\'aperto</item>
+        <item>Balli di gruppo</item>
+        <item>bambini</item>
+        <item>Capodanno</item>
+        <item>Carnevale</item>
+        <item>Cibo</item>
+        <item>Concerto</item>
+        <item>Contenuti Multimediali</item>
+        <item>Contest</item>
+        <item>Convegno</item>
+        <item>Corso</item>
+        <item>Culturale</item>
+        <item>Disco</item>
+        <item>Divulgativo</item>
+        <item>Escursioni</item>
+        <item>Festa in maschera</item>
+        <item>Festival</item>
+        <item>Flash Mob</item>
+        <item>Free Bar</item>
+        <item>Gadgets e premi</item>
+        <item>Giochi</item>
+        <item>Halloween</item>
+        <item>Inaugurazione</item>
+        <item>Karaoke</item>
+        <item>Ludico</item>
+        <item>Mostra</item>
+        <item>Musica Live</item>
+        <item>Offerta-day</item>
+        <item>Patrocinate</item>
+        <item>Petizione</item>
+        <item>Pillow Fight</item>
+        <item>Politica e Sociale</item>
+        <item>Raduno</item>
+        <item>Religioso</item>
+        <item>Rievocazioni storiche</item>
+        <item>Sagra</item>
+        <item>Salute</item>
+        <item>Schiuma party</item>
+        <item>Sport</item>
+        <item>Teatro</item>
+        <item>VIP</item>
+        <item>Visite guidate</item>
+        <item>Volontariato</item>
+        <item>Workshop</item>
+    </string-array>
+
+    <string-array name="periodo_eventi" translate="no">
+        <item value="15gg">eventi prossimi 15gg</item>
+        <item value="this_month">eventi di questo mese</item>
+        <item value="3month">3 mesi di eventi</item>
+        <item value="6month">6 mesi di eventi</item>
+        <item value="12month">12 mesi di eventi</item>
+        <item value="nolimit">senza limiti</item>
+    </string-array>
+
+    <string-array name="periodo_eventi_values" translate="no">
+        <item>15gg</item>
+        <item>this_month</item>
+        <item>3month</item>
+        <item>6month</item>
+        <item>12month</item>
+        <item>null</item>
+    </string-array>
+
+    <string-array name="attributi" translate="no">
+        <item value="si_preferito">SI preferito</item>
+        <item value="no_preferito">NO preferito</item>
+        <item value="id">id</item>
+        <item value="titolo">titolo</item>
+        <item value="descrizione">descrizione</item>
+        <item value="data_i">data inizio</item>
+        <item value="data_f">data fine</item>
+        <item value="latitudine">latitudine</item>
+        <item value="longitudine">longitudine</item>
+        <item value="struttura">struttura</item>
+        <item value="via">via</item>
+        <item value="si_immagine">SI immagine</item>
+        <item value="no_immagine">NO immagine</item>
+        <item value="si_gratuito">SI gratuito</item>
+        <item value="no_gratuito">NO gratuito</item>
+        <item value="si_prenotazione">SI prenotazione</item>
+        <item value="no_prenotazione">NO prenotazione</item>
+        <!--//attributi.add(new ListViewCheckboxed("", "tipo_prenotazione</item> -->
+        <!--//attributi.add(new ListViewCheckboxed("", "da_eta</item> -->
+        <!--//attributi.add(new ListViewCheckboxed("", "tipo_eta</item> -->
+        <item value="external_urls">indirizzi web</item>
+        <item value="si_youtube">con video youtube</item>
+        <item value="no_youtube">senza video youtube</item>
+        <item value="username">username</item>
+        <!--//attributi.add(new ListViewCheckboxed("", "stato</item> -->
+        <item value="si_speciale">SI speciale</item>
+    </string-array>
+
+    <string-array name="attributi_default" translate="no">
+        <item>titolo</item>
+        <item>descrizione</item>
+        <item>data_i</item>
+        <item>data_f</item>
+        <!--//attributi.add(new ListViewCheckboxed("", "immagine</item> -->
+        <!--//attributi.add(new ListViewCheckboxed("", "gratuito</item> -->
+        <!--//attributi.add(new ListViewCheckboxed("", "su_prenotazione</item> -->
+        <!--//attributi.add(new ListViewCheckboxed("", "tipo_prenotazione</item> -->
+        <!--//attributi.add(new ListViewCheckboxed("", "da_eta</item> -->
+        <!--//attributi.add(new ListViewCheckboxed("", "tipo_eta</item> -->
+    </string-array>
+
+    <string-array name="eventprices">
+        <item value="gratis">Gratuiti</item>
+        <item value="no_gratis">Non gratuiti</item>
+        <item value="null">Indifferente</item>
+    </string-array>
+
+    <string-array name="eventprices_values" translate="no">
+        <item>gratis</item>
+        <item>no_gratis</item>
+        <item>null</item>
+    </string-array>
+    <string-array name="eventprices_default" translate="no">
+        <item value="null">null</item>
+    </string-array>
+
+    <string-array name="eta_array" translate="no">
+        <item value="-">All</item>
+        <item value="null">Not specified values</item>
+        <item value="0">0</item>
+        <item value="1">1</item>
+        <item value="2">2</item>
+        <item value="3">3</item>
+        <item value="4">4</item>
+        <item value="5">5</item>
+        <item value="6">6</item>
+        <item value="7">7</item>
+        <item value="8">8</item>
+        <item value="9">9</item>
+        <item value="10">10</item>
+        <item value="11">11</item>
+        <item value="12">12</item>
+        <item value="13">13</item>
+        <item value="14">14</item>
+        <item value="15">15</item>
+        <item value="16">16</item>
+        <item value="17">17</item>
+        <item value="18">18</item>
+        <item value="19">19</item>
+        <item value="20">20</item>
+        <item value="21">21</item>
+        <item value="22">22</item>
+        <item value="23">23</item>
+        <item value="24">24</item>
+        <item value="25">25</item>
+        <item value="26">26</item>
+        <item value="27">27</item>
+        <item value="28">28</item>
+        <item value="29">29</item>
+        <item value="30">30</item>
+        <item value="31">31</item>
+        <item value="32">32</item>
+        <item value="33">33</item>
+        <item value="34">34</item>
+        <item value="35">35</item>
+        <item value="36">36</item>
+        <item value="37">37</item>
+        <item value="38">38</item>
+        <item value="39">39</item>
+        <item value="40">40</item>
+        <item value="41">41</item>
+        <item value="42">42</item>
+        <item value="43">43</item>
+        <item value="44">44</item>
+        <item value="45">45</item>
+        <item value="46">46</item>
+        <item value="47">47</item>
+        <item value="48">48</item>
+        <item value="49">49</item>
+        <item value="50">50</item>
+        <item value="51">51</item>
+        <item value="52">52</item>
+        <item value="53">53</item>
+        <item value="54">54</item>
+        <item value="55">55</item>
+        <item value="56">56</item>
+        <item value="57">57</item>
+        <item value="58">58</item>
+        <item value="59">59</item>
+        <item value="60">60</item>
+        <item value="61">61</item>
+        <item value="62">62</item>
+        <item value="63">63</item>
+        <item value="64">64</item>
+        <item value="65">65</item>
+        <item value="66">66</item>
+        <item value="67">67</item>
+        <item value="68">68</item>
+        <item value="69">69</item>
+        <item value="70">70</item>
+        <item value="71">71</item>
+        <item value="72">72</item>
+        <item value="73">73</item>
+        <item value="74">74</item>
+        <item value="75">75</item>
+        <item value="76">76</item>
+        <item value="77">77</item>
+        <item value="78">78</item>
+        <item value="79">79</item>
+        <item value="80">80</item>
+        <item value="81">81</item>
+        <item value="82">82</item>
+        <item value="83">83</item>
+        <item value="84">84</item>
+        <item value="85">85</item>
+        <item value="86">86</item>
+        <item value="87">87</item>
+        <item value="88">88</item>
+        <item value="89">89</item>
+        <item value="90">90</item>
+        <item value="91">91</item>
+        <item value="92">92</item>
+        <item value="93">93</item>
+        <item value="94">94</item>
+        <item value="95">95</item>
+        <item value="96">96</item>
+        <item value="97">97</item>
+        <item value="98">98</item>
+        <item value="99">99</item>
+        <item value="100">100</item>
+    </string-array>
+
+</resources>

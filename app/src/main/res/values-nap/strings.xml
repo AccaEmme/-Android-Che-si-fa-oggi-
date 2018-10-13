@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="chesifaoggi_exitmessage">Verament vuò chiur sto programm?</string>
+    <string name="chesifaoggi_exittitle">Chiurimm o programm</string>
+    <string name="eventiactivity_addToPrefered">Mettimm din\'t i preferit</string>
+</resources>

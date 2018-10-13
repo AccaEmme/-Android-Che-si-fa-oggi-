@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="2"
+        android:textAlignment="center"
+        >
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/eventiactivity_eventlist" />
+         <Button
+            android:id="@+id/button_updateEvents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eventiactivity_update" />
+    </GridLayout>
+
+    <EditText android:id="@+id/inputSearchEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/eventiactivity_searchevent"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:inputType="textVisiblePassword"/>
+
+    <ListView android:id="@+id/listView_eventi"
+        android:layout_width="wrap_content"
+        android:layout_height="430dp"
+        android:choiceMode="multipleChoice"
+        android:layout_marginRight="3dp"
+        />
+    <!-- *** multipleChoice inutile ? *** -->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/side_nav_bar_centerColor"
+        android:id="@+id/ads_table">
+        <TextView
+            android:id="@+id/ads"
+            android:textSize="@dimen/smallestText"
+            android:text="Ads() pubblicità e comunicazioni"
+            />
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/text"
+        android:text="Definisci le informazioni, consenti alla nostra mini intelligenza artificiale di aiutarti" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/grigliagioia"
+            android:columnCount="1"
+            android:textAlignment="center"
+            >
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#abf234"
+                android:checkedButton="@+id/radiobutton_1.4_indifferente" >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_1.1_sonosolo"
+                    android:text="Sono solo" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_1.2_coppia"
+                    android:text="In coppia" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_1.3_gruppo"
+                    android:text="In gruppo" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_1.4_indifferente"
+                    android:text="Indifferente" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#abf234"
+                android:checkedButton="@+id/radiobutton_2.3_indifferente"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_2.1_aperto"
+                    android:text="Preferisco all'aperto" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_2.2_chiuso"
+                    android:text="Preferisco al chiuso" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_2.3_indifferente"
+                    android:text="Indifferente" />
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#abf234"
+                android:checkedButton="@+id/radiobutton_3.3_indifferente"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_3.1_attivo"
+                    android:text="Qualcosa di attivo" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_3.2_passivo"
+                    android:text="Qualcosa di passivo" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_3.3_indifferente"
+                    android:text="Indifferente" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#abf234"
+                android:checkedButton="@+id/radiobutton_4.3_indifferente" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_4.1_rilassante"
+                    android:text="Attività rilassante" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_4.2_movimentata"
+                    android:text="Attività movimentata" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_4.3_indifferente"
+                    android:text="Indifferente" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#abf234"
+                android:checkedButton="@+id/radiobutton_5.3_indifferente" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_5.1_maltempo"
+                    android:text="Mal tempo" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_5.2_beltempo"
+                    android:text="Bel tempo" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_5.3_indifferente"
+                    android:text="Indifferente" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#abf234"
+                android:checkedButton="@+id/radiobutton_6.3_indifferente" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_6.1_fame"
+                    android:text="Hai fame" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_6.2_nofame"
+                    android:text="Non hai fame" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_6.3_indifferente"
+                    android:text="Indifferente" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#abf234"
+                android:checkedButton="@+id/radiobutton_7.4_indifferente" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_7.1_mattina"
+                    android:text="Mattina" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_7.2_pomeriggio"
+                    android:text="Pomeriggio" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_7.3_sera"
+                    android:text="Sera" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_7.4_indifferente"
+                    android:text="Indifferente" />
+            </RadioGroup>
+        </GridLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_gioia"
+        android:gravity="center_horizontal"
+        android:text="Aiutami Gioia!" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Un elenco di consigli per il tuo brainstorming!"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview_AI_consigli" />
+
+</LinearLayout>
